@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "ac": "npm --prefix AccountCurator run start",
+    "pp": "npm --prefix PixelPlacer run start"
+  }
+}

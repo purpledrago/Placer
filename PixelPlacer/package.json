@@ -1,8 +1,26 @@
 {
-  "type": "module",
+  "name": "pixel-placer",
+  "version": "0.0.1",
+  "description": "Automating reddit's r/place",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "dotenv": "^16.0.0",
     "node-fetch": "^3.2.3",
     "querystring": "^0.2.1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliasbenb/Placer.git"
+  },
+  "author": "Elias Benbourenane <eliasbenbourenane@gmail.com> (https://elias.eu.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eliasbenb/Placer/issues"
+  },
+  "engines": {
+    "node": "14.x.x || 16.x.x"
   }
 }
