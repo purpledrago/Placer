@@ -17,7 +17,7 @@ const port = process.env.PORT || 8080;
 const reddit = simpleOAuth2Reddit.create({
   clientId: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
-  callbackURL: `http://localhost:${port}/auth/callback`,
+  callbackURL: `https://reddit-placer.herokuapp.com/auth/callback`,
   state: "random-unique-string",
   authorizeOptions: { duration: "permanent" },
 });
