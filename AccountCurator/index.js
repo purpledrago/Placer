@@ -81,7 +81,12 @@ app.get("/auth/callback", reddit.accessToken, async (req, res) => {
 });
 
 app.get("/export", async (req, res) => {
-  let accounts = JSON.parse(fs.readFileSync("accounts.json"));
-  res.status(200);
-  res.json(accounts);
+  if (req.query.key == process.env.ADMIN_KEY) {
+    let accounts = JSON.parse(fs.readFileSync("accounts.json"));
+    res.status(200);
+    res.json(accounts);
+  } else {
+    res.status(401);
+    res.send("Admin key is incorrect!");
+  }
 });
