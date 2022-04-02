@@ -7,15 +7,15 @@
   "env": {
     "CLIENT_ID": {
       "description": "Client ID provided by the reddit API (https://reddit.com/prefs/apps).",
-      "generator": "secret"
+      "required": true
     },
     "CLIENT_SECRET": {
       "description": "Client secret provided by the reddit API (https://reddit.com/prefs/apps).",
-      "value": "5"
+      "required": true
     },
     "ADMIN_KEY": {
       "description": "Password to access account data.",
-      "generator": "secret"
+      "required": true
     }
   }
 }
