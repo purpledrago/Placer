@@ -3,8 +3,16 @@
   "version": "0.0.1",
   "description": "Automating reddit's r/place",
   "scripts": {
-    "ac": "npm --prefix AccountCurator run start",
-    "pp": "npm --prefix PixelPlacer run start"
+    "ac": "yarn --cwd AccountCurator run start",
+    "pp": "yarn --cwd PixelPlacer run start"
+  },
+  "dependencies": {
+    "@jimmycode/simple-oauth2-reddit": "^0.6.0",
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "node-fetch": "^3.2.3",
+    "querystring": "^0.2.1"
   },
   "repository": {
     "type": "git",
