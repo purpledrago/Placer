@@ -1,1 +1,1 @@
-web: npm run ac
+web: yarn run ac
