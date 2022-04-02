@@ -1,0 +1,21 @@
+{
+  "name": "Placer",
+  "description": "Automating reddit's r/place",
+  "repository": "https://github.com/eliasbenb/Placer",
+  "keywords": ["reddit", "placer"],
+  "image": "heroku/nodejs",
+  "env": {
+    "CLIENT_ID": {
+      "description": "Client ID provided by the reddit API (https://reddit.com/prefs/apps).",
+      "generator": "secret"
+    },
+    "CLIENT_SECRET": {
+      "description": "Client secret provided by the reddit API (https://reddit.com/prefs/apps).",
+      "value": "5"
+    },
+    "ADMIN_KEY": {
+      "description": "Password to access account data.",
+      "generator": "secret"
+    }
+  }
+}

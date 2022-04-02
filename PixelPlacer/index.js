@@ -29,7 +29,7 @@ var username = process.env.USERNAME;
 var password = process.env.PASSWORD;
 // note: use https://www.reddit.com/prefs/apps
 var app_client_id = process.env.CLIENT_ID;
-var secret_key = process.env.SECRET_KEY;
+var CLIENT_SECRET = process.env.CLIENT_SECRET;
 
 var access_token = null;
 var current_timestamp = Date.now();
@@ -101,7 +101,7 @@ while (true) {
       password: password,
     };
 
-    let credentials = Buffer.from(`${app_client_id}:${secret_key}`).toString(
+    let credentials = Buffer.from(`${app_client_id}:${CLIENT_SECRET}`).toString(
       "base64"
     );
 

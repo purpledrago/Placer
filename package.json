@@ -1,6 +1,21 @@
 {
+  "name": "placer",
+  "version": "0.0.1",
+  "description": "Automating reddit's r/place",
   "scripts": {
     "ac": "npm --prefix AccountCurator run start",
     "pp": "npm --prefix PixelPlacer run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliasbenb/Placer.git"
+  },
+  "author": "Elias Benbourenane <eliasbenbourenane@gmail.com> (https://elias.eu.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eliasbenb/Placer/issues"
+  },
+  "engines": {
+    "node": "14.x.x || 16.x.x"
   }
 }
